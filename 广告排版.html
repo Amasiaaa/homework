@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>这是我的第一次作业</title>
+    <style>
+        .ad {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            border: 1px solid #ccc;
+            padding: 8px;
+            background-color: #fff;
+        }
+
+        .banner {
+            width: 100%;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .news-wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .news-list {
+            width: 22%;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        .news-list span {
+            display: block; 
+            margin-bottom: 5px;
+        }
+        .news-list input {
+            margin-bottom : 3px;
+            display : block;
+        }
+        .news-content {
+            width: 75%;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        .news-content ol {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        /* 新增统一文本块样式 */
+        .text-block {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 15px 0;
+            background-color: #f9f9f9;
+        }
+        /* 超链接样式优化 */
+        .text-block a {
+            color: #0066cc;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .text-block a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="ad">
+        <span>我是一个快乐的广告（锦木千束）</span>
+    </div>
+
+    <div class="banner">
+        <img src="C:\Users\Administrator\Pictures\微信图片_20251018203443_136_31.jpg" alt="666">
+    </div>
+    <div class="news-wrap">
+        <div class="news-list">
+            <span>第一次数据科学概论作业</span>
+            <span>就这样吧我尽力了</span>
+            <span>QAQ</span>
+            姓名：<input type="text">
+            密码：<input type="password">
+            <button type="button" onclick="alert('登录')">登录</button>
+            
+            <!-- 左侧新增文本块（包含超链接） -->
+            <div class="text-block">
+                <span>常用链接：</span>
+                <a href="https://www.bilibili.com" target="_blank">bilibili</a>
+                <a href="https://www.taobao.com" target="_blank">淘宝</a>
+            </div>
+        </div>
+        <div class="news-content">
+            <h2>喜报！王昱智完成第一个作业</h2>
+            <ol>
+                <li>第一章：课程概述，计算机基础查漏补缺</li>
+                <li>第二章：基于 web 的数据展示技术_1</li>
+                <li>第三章：基于 web 的数据展示技术_2</li>
+                <li>第四章：基于 web 的数据发布技术</li>
+                <li>第五章：基于 web 的数据交互技术；javascript 客户端 web 编程</li>
+                <li>第六章：基于 web 的数据汇聚技术；php 服务器端 web 编程</li>
+                <li>第七章：基于 mysql 数据库的数据存储与管理</li>
+                <li>第八章：python 基础：环境配置和 IPO 模型</li>
+                <li>第九章：python 基础：数据类型</li>
+                <li>第十章：python 基础：流程控制 1</li>
+                <li>第十一章：python 基础：流程控制 2</li>
+                <li>第十二章：随堂作业 1：期中知识小测验</li>
+                <li>第十三章：数据科学与机器学习实践 1：初识 python 的功能扩展、简单 web 爬虫</li>
+                <li>第十四章：数据科学与机器学习实践 2：余弦距离和推荐算法</li>
+                <li>第十五章：随堂作业 2：数学中的 “距离” 在数据科学中的应用实践</li>
+                <li>第十六章：数据科学与机器学习实践 3：认识线性回归分析算法</li>
+                <li>第十七章：数据科学与机器学习实践 4：认识 k 均值算法</li>
+                <li>第十八章：数据科学与机器学习实践 5：认识人工神经网络算法</li>
+            </ol>
+            
+            <!-- 右侧新增文本块（包含666） -->
+            <div class="text-block">
+                这是一个神奇的文本块！
+            </div>
+        </div>
+    </div>
+</body>
+</html>
